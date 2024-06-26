@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Masters - West Tennis Club</title>
+    <style>
+        body, h1, p, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0a3d62;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header nav ul {
+            display: flex;
+            justify-content: left;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .masters-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .master-card {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+        footer {
+            background: #0a3d62;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/members">Members</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>&copy; 2024 West Tennis Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

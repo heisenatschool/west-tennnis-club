@@ -1,0 +1,86 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My Tennis Club
+{% endblock %}
+
+
+{% block content %}
+
+    {% load static %} 
+    
+    <div style="position: relative; width: 100%; overflow: hidden;">
+        <video autoplay muted loop style="width: 100%; height: auto;">
+            <source src="{% static "clip.mp4" %}" type="video/mp4"></source>
+            Your browser does not support the video tag.
+        </video>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: white; font-size: 10em; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; letter-spacing: 5px;">
+                West Tennis Club
+            </h1>
+        </div>
+    </div>
+
+    <div style="padding: 20px; background-color: #f9f9f9;">
+        <section id="events" style="margin-bottom: 40px;">
+            <h2 style="text-align: center; color: #0a3d62;">Upcoming Events</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Summer Tournament</h3>
+                    <p style="color: #777;">Join us for our annual summer tournament. All skill levels are welcome!</p>
+                    <p style="color: #999;">Date: July 20, 2024</p>
+                </div>
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Kids' Tennis Camp</h3>
+                    <p style="color: #777;">A fun and educational camp for kids aged 6-14 to learn and improve their tennis skills.</p>
+                    <p style="color: #999;">Date: August 5-10, 2024</p>
+                </div>
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Club Championships</h3>
+                    <p style="color: #777;">Compete against fellow club members in our club championships.</p>
+                    <p style="color: #999;">Date: September 15, 2024</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="facilities" style="margin-bottom: 40px;">
+            <h2 style="text-align: center; color: #0a3d62;">Our Facilities</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Indoor Courts</h3>
+                    <p style="color: #777;">Play year-round on our state-of-the-art indoor courts, equipped with professional lighting and surfaces.</p>
+                </div>
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Outdoor Courts</h3>
+                    <p style="color: #777;">Enjoy the fresh air and beautiful surroundings on our outdoor clay and grass courts.</p>
+                </div>
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Clubhouse</h3>
+                    <p style="color: #777;">Relax and socialize in our modern clubhouse, featuring a lounge, café, and pro shop.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="membership" style="margin-bottom: 40px;">
+            <h2 style="text-align: center; color: #0a3d62;">Membership Options</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Junior Membership</h3>
+                    <p style="color: #777;">Perfect for young players under 18, offering access to all courts and junior programs.</p>
+                </div>
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Adult Membership</h3>
+                    <p style="color: #777;">Ideal for adults who want to enjoy full access to our facilities and participate in events.</p>
+                </div>
+                <div style="background: white; padding: 20px; margin: 10px; width: 30%; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <h3 style="color: #555;">Family Membership</h3>
+                    <p style="color: #777;">A great option for families, providing access for up to two adults and two children.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  </main>
+
+
+{% endblock %}
