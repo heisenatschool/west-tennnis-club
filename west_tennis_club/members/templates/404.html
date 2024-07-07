@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-<title>Wrong address</title>
-<body>
+{% extends "master.html" %}
 
-<h1>Oh no!</h1>
+{% block title %}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
 
-<h2><a href="/">Anyway ...</a></h2>
 
-</body>
-</html>
+{% block content %}
+
+    <div style="width: 100%; margin-top: 5%;">
+        <p style="text-align: center; font-size: 20px;">Hmm. That page doesn't seem to exist on our server</p>
+    </div>
+
+{% endblock %}
